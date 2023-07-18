@@ -1,0 +1,28 @@
+{
+  "type": "APP",
+  "manifest_version": 1,
+  "version": "0.1",
+  "name": {
+    "ja": "電話番号リンク設置プラグイン",
+    "en": "Phone-Link-Create-Plugin"
+  },
+  "description": {
+    "ja": "電話番号リンクを設置するプラグイン。",
+    "en": "This is Phone Link Create Plugin"
+  },
+  "icon": "image/icon.png",
+  "homepage_url": "https://portfolio-app-three-beryl.vercel.app/",
+  "config": {
+    "js": ["js/config.js"],
+    "css": [],
+    "required_params": []
+  },
+  "desktop": {
+    "js": ["js/desktop.js"],
+    "css": []
+  },
+  "mobile": {
+    "js": ["js/mobile.js"],
+    "css": []
+  }
+}
