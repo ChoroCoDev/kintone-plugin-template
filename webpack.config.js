@@ -9,9 +9,9 @@ module.exports = {
 
   // メインとなるJavaScriptファイル（エントリーポイント）
   entry: {
-    config: path.resolve('src', 'config'),
-    desktop: path.resolve('src', 'desktop'),
-    mobile: path.resolve('src', 'mobile'),
+    config: path.resolve('src', 'ts', 'config'),
+    desktop: path.resolve('src', 'ts', 'desktop'),
+    mobile: path.resolve('src', 'ts', 'mobile'),
   },
   // ファイルの出力設定
   output: {
@@ -42,6 +42,9 @@ module.exports = {
   // import 文で .ts や .tsx ファイルを解決するため
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json'],
+    alias: {
+      '@src': path.resolve('src'),
+    },
   },
   // ES5(IE11等)向けの指定（webpack 5以上で必要）
   target: ['web', 'es5'],
