@@ -3,10 +3,6 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-  // モード値を production に設定すると最適化された状態で、
-  // development に設定するとソースマップ有効でJSファイルが出力される
-  mode: 'development',
-
   // メインとなるJavaScriptファイル（エントリーポイント）
   entry: {
     config: path.resolve('src', 'ts', 'config'),
